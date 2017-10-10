@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #AA0000;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UWNE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css-style.css">
+</head>
+<body>
+
+
+ <div class="navbar-header">
+    <p> <img src="logo1.jpg" alt="Logo" style="width:170px;height:100px;" > </p>
+    <h1 align="center" >University of National and World Economy</h1>
+ </div>
+ <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="apply.html">Apply</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <div class="login">
+	<a href="login.html">Login</a>
+	<a href="signup.html">Sign up</a>
+</div>
+</div>
+  
+
+<div class="right">
+<h2>Application </h2>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <label><b>Full name</b></label>
+    <input type="text" placeholder="Enter Full name" name="name" required>
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label><b>Address</b></label>
+    <input type="text" placeholder="Address" name="address" required>
+    <label><b>Phone</b></label>
+    <input type="text" placeholder="Phone" name="phone" required>
+ 
+    <label> <b> Gender </b> </label> <br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+   <p> <h2> <b> Choose speciality </b> </h2> </p> 
+   <p> <b> Bachelors Degree </b> </p>
+   <P>
+    <select>
+  <option value="none">...</option>
+  <option value="business_economy">Business Economy</option>
+  <option value="industrial_business">Industrial Business</option>
+  <option value="real_estate_management">Real Estate Management</option>
+  <option value="administration_management_en">Administration and Management Taught in English</option>
+  <option value="business_economics_en">Business Economics Taught in English</option>
+  <option value="informatics_en">Business Informatics and Communications Taught in English</option>
+  <option value="marketing_en">Marketing and Strategic Planning Taught in English</option>
+  <option value="international_relationships_en">International Economic Relationships (Education in English Language)</option>
+  <option value="finance_en">Finance and Accounting Taught in English</option>
+  <option value="business_administration">Business Administration</option>
+  <option value="public_administration">Public Administration</option>
+  <option value="business_informatics">Business Informatics and Communications</option>
+  <option value="statics">Statistics and Econometrics</option>
+  <option value="accountancy">Accountancy</option>
+  <option value="finance">Finance</option>
+  <option value="financial_control">Financial Control</option>
+  <option value="law">Law</option>
+    </select>
+</p>
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="regular" value="Regular" checked>Regular<br>
+  <input type="checkbox" name="distance" value="Distance">Distance<br>
+</form>
+
+<p> <b> Masters Degree </b> </p>
+   <p>
+    <select>
+  <option value="none">...</option>
+  <option value="business_economy">Business Economy</option>
+  <option value="macroeconomics">Macroeconomics</option>
+  <option value="informatics">Business Informatics and Communications</option>
+  <option value="statics">Statistics and Econometrics</option>
+    </select>
+</p>
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="regular" value="Regular" checked>Regular<br>
+  <input type="checkbox" name="distance" value="Distance">Distance<br>
+</form>
+    
+    <div class="clearfix">
+      <button type="apply">Apply</button>
+    </div>
+  </div>
+</form>
+</div>
+<footer>
+<a href="https://www.facebook.com/pages/University-of-National-and-World-Economy/103111856395027?fref=ts" class="fa fa-facebook"></a>
+<a href="https://www.youtube.com/watch?v=BtOcKZiRXYE&t=70s" class="fa fa-youtube"></a>
+</footer>
+</body>
+</html>

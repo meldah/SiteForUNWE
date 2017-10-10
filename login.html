@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #AA0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #AA0000;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UWNE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css-style.css">
+</head>
+<body>
+
+
+ <div class="navbar-header">
+    <p> <img src="logo1.jpg" alt="Logo" style="width:170px;height:100px;" > </p>
+    <h1 align="center" >University of National and World Economy</h1>
+ </div>
+ <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="apply.html">Apply</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <div class="login">
+	<a href="login.html">Login</a>
+	<a href="signup.html">Sign up</a>
+</div>
+</div>
+  
+
+<div class="right">
+<h2>Login Form</h2>
+
+<form action="/action_page.php"
+
+  <div class="container">
+    <label><b>Username</b></label> <br>
+    <input type="text" placeholder="Enter Username" name="uname" required> <br>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
+<footer>
+<a href="https://www.facebook.com/pages/University-of-National-and-World-Economy/103111856395027?fref=ts" class="fa fa-facebook"></a>
+<a href="https://www.youtube.com/watch?v=BtOcKZiRXYE&t=70s" class="fa fa-youtube"></a>
+</footer>
+</body>
+</html>
